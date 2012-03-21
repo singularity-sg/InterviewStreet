@@ -122,10 +122,10 @@ public class TestSolution {
 		for(int i=0;i<encryptedChars.length;i++) {
 		    for(int j=0;j<alphabet.length;j++) {
 		        if(plainChars[i] == alphabet[j]) {
-		             if(j >= 10) 
-			          encryptedChars[i] = alphabet[(j-10)%alphabet.length];
-		             else
-		                 encryptedChars[i] = alphabet[j + alphabet.length - 10];
+		             if(j >= 10) {
+		            	 encryptedChars[i] = alphabet[(j-10)%alphabet.length];
+		             } else {
+		            	 encryptedChars[i] = alphabet[j + alphabet.length - 10];
 		             }
 		        }
 		    }

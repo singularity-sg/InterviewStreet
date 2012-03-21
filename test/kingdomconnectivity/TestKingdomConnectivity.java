@@ -15,7 +15,7 @@ public class TestKingdomConnectivity {
 	public void testCaseOne() throws Exception {
 		InputStream input = TestKingdomConnectivity.class.getResourceAsStream("input00.txt");
 			
-		KingdomConnectivity kc = new KingdomConnectivity(input);
+		Solution kc = new Solution(input);
 		kc.go();
 		
 		String[] output = getOutput("output00.txt");
@@ -27,7 +27,7 @@ public class TestKingdomConnectivity {
 	public void testCaseTwo() throws Exception {
 		InputStream input = TestKingdomConnectivity.class.getResourceAsStream("input01.txt");
 			
-		KingdomConnectivity kc = new KingdomConnectivity(input);
+		Solution kc = new Solution(input);
 		kc.go();
 		
 		String[] output = getOutput("output01.txt");
@@ -37,9 +37,9 @@ public class TestKingdomConnectivity {
 	
 	@Test
 	public void testCaseThree() throws Exception {
-		InputStream input = KingdomConnectivity.class.getResourceAsStream("input02.txt");
+		InputStream input = Solution.class.getResourceAsStream("input02.txt");
 			
-		KingdomConnectivity kc = new KingdomConnectivity(input);
+		Solution kc = new Solution(input);
 		kc.go();
 		
 		String[] output = getOutput("output02.txt");
@@ -52,9 +52,9 @@ public class TestKingdomConnectivity {
 		
 		long start = System.currentTimeMillis();
 		
-		InputStream input = KingdomConnectivity.class.getResourceAsStream("input03.txt");
+		InputStream input = Solution.class.getResourceAsStream("input03.txt");
 			
-		KingdomConnectivity kc = new KingdomConnectivity(input);
+		Solution kc = new Solution(input);
 		kc.go();
 		
 		long time = System.currentTimeMillis() - start;

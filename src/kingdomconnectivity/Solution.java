@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class KingdomConnectivity {
+public class Solution {
 
 	InputStream is;
 	String[][] input = new String[2][];
@@ -21,7 +21,7 @@ public class KingdomConnectivity {
 	int count;
 
 	public static void main(String[] args) throws Exception {
-		KingdomConnectivity kc = new KingdomConnectivity(System.in);
+		Solution kc = new Solution(System.in);
 		kc.go();
 		String[] output = kc.getOutput();
 		
@@ -30,7 +30,7 @@ public class KingdomConnectivity {
 		}
 	}
 	
-	public KingdomConnectivity(InputStream in) {
+	public Solution(InputStream in) {
 		this.is = in;
 		count = 0;
 	}
